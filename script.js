@@ -42,8 +42,7 @@ function searchPokemon() {
       pokemonActual = null;
     });
 }
-<<<<<<< HEAD
-=======
+
 // !Funcion guardar favorito
 
 function guardarEnFavoritos() {
@@ -82,4 +81,3 @@ function guardarEnFavoritos() {
   localStorage.setItem("favoritos", JSON.stringify(favoritos));
   alert("¡Pokémon guardado en favoritos!");
 }
->>>>>>> 1f1c435372d6f489230a497c3b3fd1bce6d0bb0d
