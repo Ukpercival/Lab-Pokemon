@@ -15,12 +15,13 @@
         <a href="favoritos.html" class="text-nav">Mis Favoritos</a>  
         </div>
   </nav>
-    <main>
+    <main class="container text-center ">
         <div class="form">
             <h1>Busca a tu pokémon</h1>
             <label for="nombre"></label>
-            <input type="text" id="nombre" id="inputBuscador">            
-            <button  class=" boton btn" type="submit">Buscar pokemon</button>
+            <input type="text" id="nombre">
+            <label for=""></label>
+            <button  class=" boton btn" onclick="searchPokemon()">Buscar pokemon</button>
         </div>   
 
         <section>
@@ -29,13 +30,14 @@
             <div class="card-body">
                 <h5 class="card-title">Pokémon: </h5>
                 <p class="card-text">Descripción:</p>
-                <button type="submit" class=" boton btn btn-primary">Agregar favorito</button>
+                <button type="button" class="boton btn btn-primary" onclick="guardarEnFavoritos()">Agregar favorito</button>
+
             </div>
             </div>
         </section>
         <!--boton para ir a favoritos-->
         <div class="container py-5">
-            <a class="btn btn-primary" href="favoritos.html">Ir a favoritos</a>
+            <a class=" boton btn btn-primary" href="favoritos.html">Ir a favoritos</a>
         </div>
 
     </main>
