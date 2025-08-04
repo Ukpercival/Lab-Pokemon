@@ -18,18 +18,17 @@
     <main class="container text-center ">
         <div class="form">
             <h1>Busca a tu pokémon</h1>
-            <label for="nombre"></label>
+            <label for="nombre">Nombre del Pokémon:</label>
             <input type="text" id="nombre">
-            <label for=""></label>
             <button  class=" boton btn" onclick="searchPokemon()">Buscar pokemon</button>
         </div>   
 
         <section>
-         <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+         <div id="pokemonCard" class="card mx-auto mt-4" style="width: 18rem; display: none;">
+            <img src="" class="card-img-top" alt="Imagen del Pokémon" id="pokemonImage">
             <div class="card-body">
-                <h5 class="card-title">Pokémon: </h5>
-                <p class="card-text">Descripción:</p>
+                <h5 class="card-title" id="pokemonName"></h5>
+                <p class="card-text" id="pokemonDescription"></p>
                 <button type="button" class="boton btn btn-primary" onclick="guardarEnFavoritos()">Agregar favorito</button>
 
             </div>
