@@ -7,7 +7,9 @@
 }
 body{
     font-family: 'Press Start 2P', cursive;
-    background-color: var(--verde-claro)
+    background-image: url(sun-moon-cosmic-eclipse-01.jpg);
+    background-size: cover;
+
 }
 .navbar{
     background-color: var(--naranja);
