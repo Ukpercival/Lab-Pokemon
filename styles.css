@@ -12,11 +12,65 @@ body{
 .navbar{
     background-color: var(--naranja);
 }
+.navbar-brand {
+    color: var(--naranja) !important;
+}
+.navbar-brand:hover{
+    color: var(--azul-principal) !important;
+}
 nav a{
     text-decoration: none;
     color: var(--naranja);
 }
+nav a:hover{
+    text-decoration: none;
+    color: var(--celeste);
+}
+h1{
+ color: var(--marron) !important;
+}
 .boton{
     background-color: var(--azul-principal);
-    color: var(--naranja);
+    color: var(--verde-claro);
 }
+.boton:hover{
+    color: beige;
+    background-color: var(--naranja);
+    transform: scale(1.05);
+}
+.form {
+  background-color: #eef3d483;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 500px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(90, 124, 191, 0.2);
+}
+
+input[type="text"] {
+  border: 2px solid var(--azul-principal);
+  border-radius: 5px;
+  padding: 0.5rem;
+  width: 80%;
+  margin-bottom: 1rem;
+}
+
+/* Card */
+.card {
+  margin: 2rem auto;
+  border: 2px solid var(--naranja);
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+.card-title {
+  color: var(--azul-principal);
+  font-weight: bold;
+}
+
+.card-text {
+  color: var(--marron);
+}
+
+
