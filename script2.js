@@ -24,12 +24,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // 3. Crear y mostrar una tarjeta por cada Pokémon favorito
         favoritos.forEach(pokemon => {
+            // Nos aseguramos de que la descripción exista y esté limpia, incluso para Pokémon guardados antes.
+            const description = (pokemon.description || 'No hay descripción disponible.').replace(/[\n\f\r]/g, ' ');
+
             const cardHTML = `
-                <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="col-lg-4 col-md-6 col-12">
                     <div class="card h-100 shadow-sm">
                         <img src="${pokemon.image}" class="card-img-top p-3" alt="Imagen de ${pokemon.name}">
                         <div class="card-body text-center d-flex flex-column">
                             <h5 class="card-title">${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</h5>
+                            <p class="card-text small flex-grow-1">${description}</p>
                             <button class="btn btn-danger btn-sm mt-auto btn-eliminar" data-name="${pokemon.name}">
                                 Eliminar
                             </button>

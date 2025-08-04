@@ -34,12 +34,15 @@ async function searchPokemon() {
         const speciesResponse = await fetch(data.species.url);
         const speciesData = await speciesResponse.json();
         const descriptionEntry = speciesData.flavor_text_entries.find(entry => entry.language.name === 'es');
-        const description = descriptionEntry ? descriptionEntry.flavor_text : 'No se encontró descripción en español.';
+        let description = descriptionEntry ? descriptionEntry.flavor_text : 'No se encontró descripción en español.';
+
+        // Limpiar el texto de la descripción (reemplaza saltos de línea y otros caracteres)
+        description = description.replace(/[\n\f\r]/g, ' ');
 
         // 3. Guardar los datos en nuestra variable global
         pokemonActual = {
             name: data.name,
-            image: data.sprites.front_default,
+            image: data.sprites.other['official-artwork'].front_default || data.sprites.front_default,
             description: description
         };
 
