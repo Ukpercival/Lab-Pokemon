@@ -1,0 +1,22 @@
+:root {
+  --azul-principal: #5A7CBF;   /* Azul medio */
+  --celeste: #6CCED9;          /* Celeste vibrante */
+  --naranja: #F29441;          /* Naranja cálido */
+  --marron: #A67A6A;           /* Marrón suave */
+  --verde-claro: #D4E28B;      /* Verde pastel */
+}
+body{
+    font-family: 'Press Start 2P', cursive;
+    background-color: var(--verde-claro)
+}
+.navbar{
+    background-color: var(--naranja);
+}
+nav a{
+    text-decoration: none;
+    color: var(--naranja);
+}
+.boton{
+    background-color: var(--azul-principal);
+    color: var(--naranja);
+}
